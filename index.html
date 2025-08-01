@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旋转寿司餐厅 - 美味寿司拉面等您品尝</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="Photos/logo.jpg" alt="Rolling Sushi & Ramen Logo" class="logo-image">
+                <h2>Rolling sushi & ramen</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">首页</a></li>
+                 <li><a href="#menu">菜单</a></li>
+                 <li><a href="#about">关于我们</a></li>
+                 <li><a href="#contact">联系我们</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主页横幅 -->
+    <section id="home" class="hero">
+        <video class="hero-video" autoplay muted loop>
+            <source src="Photos/ROLLING SUSHI 1124 Reel Espacio.mp4" type="video/mp4">
+            您的浏览器不支持视频播放。
+        </video>
+        <div class="hero-content">
+            <h1>欢迎来到Rolling sushi & ramen</h1>
+             <p>新鲜美味的寿司与正宗拉面，传统工艺与现代创新的完美结合</p>
+             <button class="cta-button">查看菜单</button>
+        </div>
+    </section>
+
+    <!-- 菜单部分 -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2>精选菜单</h2>
+             <div class="menu-categories">
+                 <button class="category-btn active" data-category="all">Todo</button>
+                 <button class="category-btn" data-category="sushi">Sushi</button>
+                 <button class="category-btn" data-category="ramen">Ramen</button>
+                 <button class="category-btn" data-category="cocina">Cocina caliente</button>
+                 <button class="category-btn" data-category="bebida">Bebida</button>
+             </div>
+            <div class="menu-grid">
+                <!-- 寿司卷类 -->
+                <div class="menu-item" data-category="sushi">
+                    <div class="menu-item-image">🍱</div>
+                    <h3>Dragon Roll</h3>
+                    <p>鳗鱼、牛油果、虾、蟹肉、天妇罗、胡椒和奶酪</p>
+                    <span class="price">$280</span>
+                </div>
+                <div class="menu-item" data-category="sushi">
+                    <div class="menu-item-image">🍱</div>
+                    <h3>Dragon Especial</h3>
+                    <p>鳗鱼、虾、蟹肉、天妇罗、胡椒和奶酪</p>
+                    <span class="price">$338</span>
+                </div>
+                <div class="menu-item" data-category="sushi">
+                    <div class="menu-item-image">🍱</div>
+                    <h3>California Roll</h3>
+                    <p>鳗鱼、虾、胡椒和牛油果</p>
+                    <span class="price">$148</span>
+                </div>
+                <div class="menu-item" data-category="sushi">
+                    <div class="menu-item-image">🍱</div>
+                    <h3>Spicy Aguacate</h3>
+                    <p>牛油果、辣蛋黄酱、蟹肉、天妇罗、虾和胡椒</p>
+                    <span class="price">$198</span>
+                </div>
+                <div class="menu-item" data-category="sushi">
+                    <div class="menu-item-image">🍱</div>
+                    <h3>Mar y Tierra</h3>
+                    <p>天妇罗虾、蟹肉、奶酪、牛油果和胡椒</p>
+                    <span class="price">$198</span>
+                </div>
+                <div class="menu-item" data-category="sushi">
+                    <div class="menu-item-image">🍱</div>
+                    <h3>Sake Salmón</h3>
+                    <p>新鲜三文鱼、蟹肉、胡椒、牛油果和奶酪</p>
+                    <span class="price">$238</span>
+                </div>
+                <div class="menu-item" data-category="sushi">
+                    <div class="menu-item-image">🍱</div>
+                    <h3>Crunchy Roll</h3>
+                    <p>天妇罗虾、辣虾、牛油果、奶油奶酪和胡椒</p>
+                    <span class="price">$188</span>
+                </div>
+                <div class="menu-item" data-category="sushi">
+                    <div class="menu-item-image">🍱</div>
+                    <h3>Salmón Horneado</h3>
+                    <p>烤三文鱼、虾、牛油果、奶油奶酪和胡椒</p>
+                    <span class="price">$238</span>
+                </div>
+                <div class="menu-item" data-category="sushi">
+                    <div class="menu-item-image">🍱</div>
+                    <h3>Flamin Roll</h3>
+                    <p>酥脆火焰热虾、蟹肉、辣奶酪和牛油果</p>
+                    <span class="price">$188</span>
+                </div>
+                <div class="menu-item" data-category="sushi">
+                    <div class="menu-item-image">🍱</div>
+                    <h3>Volcano Roll</h3>
+                    <p>虾天妇罗、辣火焰虾、蟹肉、奶酪、牛油果和胡椒</p>
+                    <span class="price">$218</span>
+                </div>
+                
+                <!-- 拉面类 -->
+                <div class="menu-item" data-category="ramen">
+                    <div class="menu-item-image"><img src="Photos/Tonkotsu ramen.jpg" alt="Tonkotsu Clásico"></div>
+                    <h3>Tonkotsu Clásico</h3>
+                    <p>叉烧、腌蛋、笋干、葱花、蒜泥、芝麻、豚骨汤底</p>
+                    <span class="price">$218</span>
+                </div>
+                <div class="menu-item" data-category="ramen">
+                    <div class="menu-item-image"><img src="Photos/Rolling ramen.jpg" alt="Rolling Ramen"></div>
+                    <h3>Rolling Ramen</h3>
+                    <p>猪肉丝、腌蛋、笋干、葱花、豆芽菜、味噌汤底</p>
+                    <span class="price">$228</span>
+                </div>
+                <div class="menu-item" data-category="ramen">
+                    <div class="menu-item-image"><img src="Photos/Burakku ramen.jpg" alt="Burakku Ramen"></div>
+                    <h3>Burakku Ramen</h3>
+                    <p>特制黑蒜酱、叉烧、腌蛋、笋干、葱花、豚骨汤底</p>
+                    <span class="price">$238</span>
+                </div>
+                <div class="menu-item" data-category="ramen">
+                    <div class="menu-item-image"><img src="Photos/Jigoku ramen.jpg" alt="Jigoku Ramen"></div>
+                    <h3>Jigoku Ramen</h3>
+                    <p>辣酱、叉烧、腌蛋、笋干、葱花、豚骨汤底</p>
+                    <span class="price">$238</span>
+                </div>
+                <div class="menu-item" data-category="ramen">
+                    <div class="menu-item-image"><img src="Photos/Yasai ramen.jpg" alt="Yasai Ramen"></div>
+                    <h3>Yasai Ramen</h3>
+                    <p>豆腐、葱花、豆芽菜、卷心菜、蔬菜汤底</p>
+                    <span class="price">$208</span>
+                </div>
+                <div class="menu-item" data-category="ramen">
+                    <div class="menu-item-image">
+                        <img src="Photos/Katsu ramen1.jpg" alt="Katsu Ramen">
+                        <img src="Photos/Katsu ramen2.jpg" alt="Katsu Ramen">
+                    </div>
+                    <h3>Katsu Ramen</h3>
+                    <p>炸猪排、腌蛋、卷心菜、味噌汤底</p>
+                    <span class="price">$218</span>
+                </div>
+                <div class="menu-item" data-category="ramen">
+                    <div class="menu-item-image">
+                        <img src="Photos/Tempura ramen1.jpg" alt="Tempura Ramen">
+                        <img src="Photos/Tempura ramen2.jpg" alt="Tempura Ramen">
+                    </div>
+                    <h3>Tempura Ramen</h3>
+                    <p>虾天妇罗、葱花、卷心菜、味噌汤底</p>
+                    <span class="price">$228</span>
+                </div>
+                
+                <!-- 特色料理 -->
+                <div class="menu-item" data-category="cocina">
+                    <div class="menu-item-image">🍤</div>
+                    <h3>Popcorn Chicken</h3>
+                    <p>爆米花鸡块配特制调料</p>
+                    <span class="price">$135</span>
+                </div>
+                <div class="menu-item" data-category="cocina">
+                    <div class="menu-item-image">🥟</div>
+                    <h3>Takoyaki</h3>
+                    <p>章鱼烧配蛋黄酱和鲣鱼片</p>
+                    <span class="price">$130</span>
+                </div>
+                <div class="menu-item" data-category="cocina">
+                    <div class="menu-item-image">🥟</div>
+                    <h3>Gyoza Frito</h3>
+                    <p>煎饺配蔬菜</p>
+                    <span class="price">$90</span>
+                </div>
+                <div class="menu-item" data-category="cocina">
+                    <div class="menu-item-image">🍤</div>
+                    <h3>Tempura Mixta</h3>
+                    <p>虾和蔬菜天妇罗</p>
+                    <span class="price">$130</span>
+                </div>
+                
+                <!-- 饮品类 -->
+                <div class="menu-item" data-category="bebida">
+                    <div class="menu-item-image">🍵</div>
+                    <h3>Té Verde</h3>
+                    <p>传统日式绿茶</p>
+                    <span class="price">$25</span>
+                </div>
+                <div class="menu-item" data-category="bebida">
+                    <div class="menu-item-image">🥤</div>
+                    <h3>Ramune</h3>
+                    <p>日式汽水，多种口味</p>
+                    <span class="price">$35</span>
+                </div>
+                <div class="menu-item" data-category="bebida">
+                    <div class="menu-item-image">🍺</div>
+                    <h3>Sake</h3>
+                    <p>优质日本清酒</p>
+                    <span class="price">$80</span>
+                </div>
+                <div class="menu-item" data-category="bebida">
+                    <div class="menu-item-image">🧊</div>
+                    <h3>Agua Mineral</h3>
+                    <p>天然矿泉水</p>
+                    <span class="price">$20</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>关于我们</h2>
+                     <p>我们是一家专注于传统日式料理的餐厅，拥有20年的制作经验。我们的师傅来自日本，严格按照传统工艺制作每一份寿司和拉面。</p>
+                     <p>在这里，您可以享受到最新鲜的海鲜，最优质的寿司米，以及精心熬制的拉面汤底。我们的旋转寿司带和现煮拉面为您带来独特的用餐体验。</p>
+                    <div class="features">
+                        <div class="feature">
+                            <span class="feature-icon">🍣</span>
+                            <h4>精品寿司</h4>
+                             <p>每日空运新鲜海鲜制作</p>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🍜</span>
+                            <h4>正宗拉面</h4>
+                             <p>传统工艺熬制汤底</p>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🥢</span>
+                            <h4>日式体验</h4>
+                             <p>正宗日式用餐文化</p>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🍙</span>
+                            <h4>寿司卷</h4>
+                             <p>手工制作各式卷物</p>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🍤</span>
+                            <h4>天妇罗</h4>
+                             <p>酥脆外皮鲜美内馅</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="chef-illustration">👨‍🍳</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>联系我们</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <h4>Dirección</h4>
+                             <p>Calz. Justo Sierra 1658, Cuauhtémoc Sur, 21100 Mexicali, B.C.</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <img src="Photos/lista%20de%20espera.png" alt="Información de contacto" style="max-width: 300px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🕒</span>
+                        <div>
+                            <h4>Horario</h4>
+                             <p>Miércoles a Lunes 12:00-21:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <h3>Ubicación</h3>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.2!2d-115.4677891!3d32.6638888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d7682c8b8b8b8b%3A0x1234567890abcdef!2sMG5X%2BM6%20Mexicali%2C%20Baja%20California!5e0!3m2!1sen!2sus!4v1734966073123!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0; border-radius: 10px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🍣 旋转寿司</h3>
+                     <p>为您提供最正宗的日式寿司体验</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                     <ul>
+                         <li><a href="#home">首页</a></li>
+                         <li><a href="#menu">菜单</a></li>
+                         <li><a href="#about">关于我们</a></li>
+                         <li><a href="#contact">联系我们</a></li>
+                     </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>关注我们</h4>
+                     <div class="social-links">
+                         <a href="#">微信</a>
+                         <a href="#">微博</a>
+                         <a href="#">抖音</a>
+                     </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 旋转寿司餐厅. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
